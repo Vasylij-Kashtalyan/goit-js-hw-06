@@ -14,7 +14,6 @@ spanValue: document.querySelector('#value'),
 btnIncrement: document.querySelector('#counter [data-action="increment"]')
 };
 
-
 refs.btnDecrement.addEventListener('click', onbtnDecrementClick);
 refs.btnIncrement.addEventListener('click', onbtnIncrementClick);
 
