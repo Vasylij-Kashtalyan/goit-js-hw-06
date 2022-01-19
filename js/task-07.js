@@ -13,11 +13,11 @@
 
 
 
-const input = document.querySelector('#font-size-control');
-const onInput = (event) => {
+const inputFont = document.querySelector('#font-size-control');
+const spanText = document.querySelector('#text');
 
-    
+const onInputFontSize = (event) => {
+    spanText.style.fontSize = event.currentTarget.value + 'px';
 }
-
-input.addEventListener('input', onInput);
-console.log(input);
+inputFont.addEventListener('input', onInputFontSize);
+console.dir(spanText.style);
